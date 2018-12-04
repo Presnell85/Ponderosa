@@ -1,1 +1,15 @@
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav>
+    <app-sidenav-list (SideToggleClose)="sidenav.toggle()"></app-sidenav-list>
+  </mat-sidenav>
+
+<mat-sidenav-content>
+  <app-header (SideNavigationToggle)="sidenav.toggle()"></app-header>
+  <app-tabs ></app-tabs>
+</mat-sidenav-content>
+
 <router-outlet></router-outlet>
+</mat-sidenav-container>
+
+

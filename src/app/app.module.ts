@@ -14,6 +14,11 @@ import { AuthComponent } from './auth/auth.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { TabsComponent } from './navigation/tabs/tabs.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -25,7 +30,11 @@ import { RouterModule, Routes } from '@angular/router';
     EventsComponent,
     AuthComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    HomeComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    TabsComponent
 
   ],
   imports: [
@@ -33,7 +42,8 @@ import { RouterModule, Routes } from '@angular/router';
     BrowserAnimationsModule,
     MaterialModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
